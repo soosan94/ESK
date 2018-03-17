@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.owner.esk.MainActivity">
+
+    <item
+        android:id="@+id/menu_mytravel"
+        android:icon="@drawable/ic_edit"
+        android:orderInCategory="0"
+        android:title="menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/details"
+                android:title="@string/details"/>
+            <item
+                android:id="@+id/btn_mod_travel"
+                android:title="@string/modify" />
+
+            <item
+                android:id="@+id/btn_del_travel"
+                android:title="@string/delete" />
+        </menu>
+    </item>
+</menu>

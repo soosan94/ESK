@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.owner.esk.JoinActivity"
+    tools:showIn="@layout/activity_join">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.owner.esk.JoinActivity"
+        tools:showIn="@layout/activity_join"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:background="@drawable/dialog_style"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:text="SIGN UP"
+                android:textColor="@color/colorEnter"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/join_id"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:hint="아이디를 입력하세요"
+                />
+
+            <!--구분선-->
+            <View
+                android:id="@+id/div_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="#66bdbdbd" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/joinBtn2"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:text="가입 완료"/>
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:text="취소" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
